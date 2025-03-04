@@ -1,29 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>variables example</title>
+    <title>game</title>
 </head>
+
 <body>
+    <p> lets play a game </p>
     <button onclick="
-    console.log('cart quantity:${CartQuantity}');  
-      ">show quantity</button>
-  <button onclick="
-  cartQuantity =CartQuantity+ 1;
-  console.log('cart quantity:${CartQuantity}');
-  ">add to cart</button>
-  <button onclick="
-  cartQuantity =CartQuantity+ 2;
-  console.log('cart quantity:${CartQuantity}');
-  ">+2</button>
-  <button onclick="
-  cartQuantity =CartQuantity+ 3;
-  console.log('cart quantity:${CartQuantity}')
-  ">+3</button>
-  <button>reset cart</button>
-  <script>
-      let CartQuantity = 0;
-  </script>
+    const random = Math.random();
+    let values=``;
+    if(random >=0 && random <= 1/3){
+        values=paper;}
+        else if(random >=1/3 && random >=2/3){
+            values=rock; }
+        else{
+            values=scissors;
+        }
+        console.log(values);
+
+        let result=``;
+        if(values===paper){
+              result='you win';
+        }
+        else if(values===rock){
+            result='you lose';
+        }
+        else{
+            result='draw';
+        }
+        alert(`you have choose rock and computer choose ${values} so ${result}`);
+    ">paper</button>
+    <button onclick="
+    const random1 = Math.random();
+    let value=``;
+    if(random >=0 && random <= 1/3){
+        values=paper;}
+        else if(random >=1/3 && random >=2/3){
+            values=rock; }
+        else{
+            values=scissors;
+        }
+        console.log(values);
+
+        let result1=``;
+        if(values===paper){
+              result1='draw';
+        }
+        else if(values===rock){
+            result1='you win';
+        }
+        else{
+            result1='you lose';
+        }
+        alert(`you have choose paper and computer choose ${value} so ${result1}`);">scissors</button>
+    <button onclick="
+    const random2 = Math.random();  
+    let val=``; 
+    if(random >=0 && random <= 1/3){
+        val=paper;}
+        else if(random >=1/3 && random >=2/3){
+            val=rock; }
+        else{
+            val=scissors;
+        }
+        console.log(val);
+
+        let result2=``;
+        if(values===paper){
+              result2='draw';
+        }
+        else if(values===rock){
+            result2='you win';
+        }
+        else{
+            result2='you lose';
+        }
+        alert(`you have choose paper and computer choose ${val} so ${result12}`);
+      "> scissors</button>
+    <script>
+
+    </script>
 </body>
 </html>
