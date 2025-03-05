@@ -11,17 +11,17 @@
     <p>Let's play a game!</p>
 
     <button onclick="
-        const computerChoice = computermove();
+        const computerChoice2 = computermove();
         playmove('rock', computerChoice);
     ">Rock</button>
 
     <button onclick="
-        const computerChoice = computermove();
+        const computerChoice1 = computermove();
         playmove('scissors', computerChoice);
     ">Scissors</button>
 
     <button onclick="
-        const computerChoice = computermove();
+        const computerChoice3 = computermove();
         playmove('paper', computerChoice);
     ">Paper</button>
 
@@ -31,36 +31,35 @@
             let computerChoice = '';
 
             if (random >= 0 && random < 1 / 3) {
-                computerChoice = 'rock';
+                computerChoice2 = 'rock';
             } else if (random >= 1 / 3 && random < 2 / 3) {
-                computerChoice = 'paper';
+                computerChoice3 = 'paper';
             } else {
-                computerChoice = 'scissors';
+                computerChoice1 = 'scissors';
             }
 
-            return computerChoice; 
+            return computerChoice1||computerChoice2||computerChoice3; 
         }
 
-        function playmove(playerchoice, computerChoice) {
+        function playmove(playerchoice, computerChoice1||computerChoice2||computerChoice3) {
             let result = '';
 
-            if (playerchoice === computerChoice) {
+            if (playerchoice === computerChoice1||computerChoice2||computerChoice3) {
                 result = 'It\'s a draw!';
             } else if (
-                (playerchoice === 'rock' && computerChoice === 'scissors') ||
-                (playerchoice === 'paper' && computerChoice === 'rock') ||
-                (playerchoice === 'scissors' && computerChoice === 'paper')
+                (playerchoice === 'rock' && computerChoice1 === 'scissors') ||
+                (playerchoice === 'paper' && computerChoice2 === 'rock') ||
+                (playerchoice === 'scissors' && computerChoice3 === 'paper')
             ) {
                 result = 'You win!';
             } else {
                 result = 'You lose!';
             }
 
-            alert(`You chose ${playerchoice}, and the computer chose ${computerChoice}. ${result}`);
+            alert(`You chose ${playerchoice}, and the computer chose ${computerChoice1||computerChoice2||computerChoice3}. ${result}`);
         }
     </script>
 
 </body>
 
 </html>
-
