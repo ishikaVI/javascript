@@ -4,84 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game</title>
+    <title>Rock Paper Scissors</title>
 </head>
 
 <body>
-    <p> lets play a game </p>
+    <p>Let's play a game!</p>
+
     <button onclick="
-    const random = Math.random();
-    let values=``;
-    if(random >=0 && random <= 1/3){
-        values=paper;}
-        else if(random >=1/3 && random >=2/3){
-            values=rock; }
-        else{
-            values=scissors;
-        }
-        console.log(values);
+        let random3 = Math.random();
+        let computerChoice3 = '';
 
-        let result=``;
-        if(values===paper){
-              result='you win';
+        if (random3 >= 0 && random3 < 1/3) {
+            computerChoice3 = 'rock';
+        } else if (random3 >= 1/3 && random3 < 2/3) {
+            computerChoice3 = 'paper';
+        } else {
+            computerChoice3 = 'scissors';
         }
-        else if(values===rock){
-            result='you lose';
+
+        let playerChoice1 = 'rock';
+        let result1 = '';
+
+        if (playerChoice1 === computerChoice3) {
+            result1 = 'It\'s a draw!';
+        } else if (computerChoice3 === 'scissors') {
+            result1 = 'You win!';
+        } else {
+            result1 = 'You lose!';
         }
-        else{
-            result='draw';
-        }
-        alert(`you have choose rock and computer choose ${values} so ${result}`);
-    ">paper</button>
+
+        alert(`You chose ${playerChoice1}, and the computer chose ${computerChoice3}. ${result1}`);
+    ">Rock</button>
+
     <button onclick="
-    const random1 = Math.random();
-    let value=``;
-    if(random >=0 && random <= 1/3){
-        values=paper;}
-        else if(random >=1/3 && random >=2/3){
-            values=rock; }
-        else{
-            values=scissors;
-        }
-        console.log(values);
+        let random2 = Math.random();
+        let computerChoice2 = '';
 
-        let result1=``;
-        if(values===paper){
-              result1='draw';
+        if (random2 >= 0 && random2 < 1/3) {
+            computerChoice22 = 'rock';
+        } else if (random2 >= 1/3 && random2 < 2/3) {
+            computerChoice2 = 'paper';
+        } else {
+            computerChoice2 = 'scissors';
         }
-        else if(values===rock){
-            result1='you win';
+
+        let playerChoice2 = 'paper';
+        let result2 = '';
+
+        if (playerChoice2 === computerChoice2) {
+            result2 = 'It\'s a draw!';
+        } else if (computerChoice === 'rock') {
+            result2 = 'You win!';
+        } else {
+            result2 = 'You lose!';
         }
-        else{
-            result1='you lose';
-        }
-        alert(`you have choose paper and computer choose ${value} so ${result1}`);">scissors</button>
+
+        alert(`You chose ${playerChoice2}, and the computer chose ${computerChoice2}. ${result2}`);
+    ">Paper</button>
     <button onclick="
-    const random2 = Math.random();  
-    let val=``; 
-    if(random >=0 && random <= 1/3){
-        val=paper;}
-        else if(random >=1/3 && random >=2/3){
-            val=rock; }
-        else{
-            val=scissors;
-        }
-        console.log(val);
+        let random = Math.random();
+        let computerChoice = '';
 
-        let result2=``;
-        if(values===paper){
-              result2='draw';
+        if (random >= 0 && random < 1/3) {
+            computerChoice = 'rock';
+        } else if (random >= 1/3 && random < 2/3) {
+            computerChoice = 'paper';
+        } else {
+            computerChoice = 'scissors';
         }
-        else if(values===rock){
-            result2='you win';
-        }
-        else{
-            result2='you lose';
-        }
-        alert(`you have choose scissors and computer choose ${val} so ${result2}`);
-      "> scissors</button>
-    <script>
 
-    </script>
+        let playerChoice = 'scissors';
+        let result = '';
+
+        if (playerChoice === computerChoice) {
+            result = 'It\'s a draw!';
+        } else if (computerChoice === 'paper') {
+            result = 'You win!';
+        } else {
+            result = 'You lose!';
+        }
+
+        alert(`You chose ${playerChoice}, and the computer chose ${computerChoice}. ${result}`);
+    ">Scissors</button>
+
 </body>
+
 </html>
