@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays</title>
+</head>
+
+<body>
+    <script>
+        let Name = ["priya", "riya", "siya", "sita", "geeta"];
+        // for loo
+        for (let i = 0; i <= Name.lenght; i++) {
+            console.log(Name[i]);
+        }
+        // for of
+        for (let j of Name) {
+            console.log(j);
+        }
+        //practice question
+        let marks = [85, 76, 97, 37, 60];
+        let sum = 0;
+        for (let val of marks) {
+            sum += val;
+        }
+        let avg = sum / marks.lenght();
+        console.log(`avg marks of the students is : ${avg}`);
+
+        // practice question using for of
+        let items = [250, 300, 350, 400, 500];
+        for (let val of items) {
+            let offer = val / 10;
+            items[i] = items[i] - offer;
+            console.log(`value after the offer=${items[i]}`);
+        }
+
+        // using for loop
+        for (let i = 0; i <= items.lenght; i++) {
+            let offer = items[i] / 10;
+            items[i] -= offer;
+        }
+        console.log(items);
+
+        // methods of array 
+        let foodItems = ["apple", "banana", "cabbage", "cauliflower"];
+        console.log(foodItems.push("chips"));
+        console.log(foodItems.pop("apple"));
+        // toString() used for converting any array into string
+        let fruits=['orange','kiwi','cherry'];
+        consolo.log(foodItems.concat(fruits)); // creates a new string won't effect the original one
+        console.log(foodItems.unshift("pineapple")); // used to add things in start of the array
+        console.log(fruits.shift("kiwi")); // used to delete the start value
+        console.log(foodItems.slice(1,4)); // used to print the array value to specific number but never prints the end value
+        console.log(fruits.splice (1,2,beetroot)); // used for changing the original array 
+                               //(startindex,element to delete index, new to add)   
+    </script>
+</body>
+
+</html>

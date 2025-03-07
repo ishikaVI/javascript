@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings</title>
+</head>
+<body>
+    <script>
+       let str="hello"; 
+       let s='world';
+       console.log(str.length());
+       console.log(str[3]); // returns or gives the value preset on that positions
+       
+       // template literals in tmp numbers is also consider as string
+       let special=` this is a string ${1+2+3}`;
+       let specialstring="hello world";
+       let student= {
+        name:nidhi,
+        srn:2023010059,
+        cgpa:9,
+       };
+    //   console.log(typeof specialstring); normal way to print
+    console.log(` hello everyone she is ${student.name}`);
+    console.log(` hello everyone she is ${special}`);
+// skiped line can be given by \n,\t and the this both elements are considered as one unit even if it has 2 element
+let st="good morning";
+// methods of strings (creates new string won't change anything in original string)
+console.log(specialstring.toUpperCase());
+console.log(specialstring.toLowerCase());
+console.log(specialstring.trim());  // removes whitespaces from just start and end
+console.log(specialstring.slice(e,o));  // returns the part of string
+console.log(specialstring.concat(st)); // joins 2 strings
+console.log(specialstring.replace(hello,heyy)); // replace the value/string assigned to the original string
+
+    </script>
+</body>
+</html>
