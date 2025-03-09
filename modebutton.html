@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mode</title>
+    <style> 
+        light{
+            background-color: white;
+        }
+        dark{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn"> change the mode</button>
+    <script>
+        let modebtn=document.querySelector("#btn");
+let crtmode=light;
+let body=document.querySelector("body");
+modebtn.addEventListener("click",()=>{
+    if(crtmode==="light"){
+    console.log('dark');
+    body.classList.add("dark");
+    body.classList.remove("light");
+}
+ else{
+    console.log('light');
+    body.classList.add("light");
+    body.classList.remove("dark");
+}
+});
+    </script>
+</body>
+</html>
