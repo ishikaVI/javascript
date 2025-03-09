@@ -1,4 +1,4 @@
-console.dir(document); // used for viewing all the documents present in the code
+ /* console.dir(document); // used for viewing all the documents present in the code
 document.getElementById("header");
 console.log(document.body);
 document.getElementsByClassName("area");
@@ -17,12 +17,17 @@ console.dir(allel);
 console.dir(document.body.firstChild); // used for having a childclass
 
 let div=document.querySelector("div");
-console.dir(div);
-
+console.dir(div); 
+*/
 // DOM properities
 // innerText / innerHTML / tagName /textContent= used for veiwing the hidden content
 
 // starting with the attributes
 
-let have=div.getAttribute("new");
+let have=div.getAttribute("class");
 console.log(have);
+
+// style node 
+ 
+let newbtn=document.createElement("button");
+console.log(newbtn);
