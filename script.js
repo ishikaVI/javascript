@@ -21,3 +21,8 @@ console.dir(div);
 
 // DOM properities
 // innerText / innerHTML / tagName /textContent= used for veiwing the hidden content
+
+// starting with the attributes
+
+let have=div.getAttribute("new");
+console.log(have);
