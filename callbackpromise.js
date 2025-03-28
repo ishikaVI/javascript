@@ -69,3 +69,14 @@ function getData(dataId, getnextData) {
      Promise.then((res)=>{ 
         console.log("success" , res);
      })
+
+
+// call back chain
+
+getData(1).
+then((res)=>{
+    return getData(2);
+})
+.then((res)=>{
+    return getData(3);
+})
